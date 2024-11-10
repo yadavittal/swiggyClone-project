@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navBar {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+  gap:100px;
+  justify-content: space-around;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.navIcon {
+  margin-right: 30%;
+}
+.searchList .navList{
+  display: flex;
+  gap:10px;
+}
+.navList li{
+  list-style: none;
+}
+.bodyContainer {
+  display:  flex;
+  gap:10px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+.card {
+  border: 2px solid black;
+  border-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 20px;
+  min-height: 250px;
+  width: 280px;
+}
+.cardTitle {
+  font-weight: 700;
+}
+.cardDatailes {
+  line-height: 20px;
+}
+.cardImg {
+  height: 200px;
+  width: 280px;
+  border-radius: 15px;
+}
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap:45px;
+}
+.ratingContainer,.ratingDetailes {
+  display: flex;
+  justify-content: start;
+  gap:10px;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ .cardPrice,.cardDesc {
+  font-family: Gilroy;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-box-orient: vertical;
+}
+* {
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* menucard styling */
+.menuCards {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  /* border-style: none; */
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 20px;
+  min-height: 150px;
+  width: 70%;
+}
+.menuCardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap:30px;
+}
+.menuImg {
+  height: 200px;
+  width: 230px;
+  border-radius: 35px;
+}
+.menuDetailes {
+  line-height: 30px;
+}
+.dataDescription {
+  word-break: break-word;
+  font-family: Gilroy;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+}
