@@ -17,8 +17,9 @@ function MenuCard({data}) {
            </div>
            <p className='dataDescription'><span>{data.description}</span></p> 
         </div>
-        <div className='menuImg'>
-        <img src={`https:media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${data.imageId}`} className="cardImg"  alt="..."/>
+        <div className='menuImg flex flex-col'>
+        <img src={`https:media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/${data.imageId}`} className="cardImage"  alt="..."/>
+        <button className='text-green-400  border-green-500 ps-4 pe-4 pt-2 pb-2'>ADD</button>
         </div>
     </article>
   )

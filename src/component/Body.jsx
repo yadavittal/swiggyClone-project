@@ -12,7 +12,7 @@ function Body() {
     const response = await resp.json();
     // console.log(response);
     const dataResp = response.data;
-    // console.log(dataResp);
+    // console.log(response);
     
     const finalData =dataResp?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     // const actualData = finalData.map((ele) => {
@@ -38,10 +38,10 @@ function Body() {
             // console.log((input));
           }}
         />
-        <button onClick={() => {}}>Search</button>
+        <button>Search</button>
       </article>
       <article className="cardHolder">
-        {/* {console.log(data)} */}
+       
         {data?.map((ele, ind) => (
           <Card key={`${ind}${ele.id}`} myData={ele} />
         ))}

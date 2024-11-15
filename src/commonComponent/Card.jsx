@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 function Card({ myData }) {
   const navigate=useNavigate();
   return (
-    <div className="card" onClick={()=>{
+    <div className="card shadow-lg flex flex-col justify-between gap-4 " onClick={()=>{
          navigate(`/menu/${myData.info.id}`)
     }}>
       <img
@@ -28,13 +28,15 @@ function Card({ myData }) {
         </p>
         <p>{myData.info.sla.slaString}</p>
       </div> 
-        
-        <p className="cardPrice">
+
+      <div className="inline-flex flex-col items-center justify-center"> 
+        <p className="cardPrice break-words">
           <span>{myData.info.cuisines}</span>
         </p>
-        <p className="cardDesc">
+        <p className="cardDesc break-words">
           <span>{myData.info.locality}</span>
         </p>
+      </div> 
       </div>
     </div>
   );

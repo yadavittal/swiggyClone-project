@@ -10,6 +10,8 @@ import { my_url } from "../constents/constents";
         const menuData = await respData.json();
         const myMenuList = menuData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card?.itemCards; 
         setData(myMenuList)
+        console.log(myMenuList);
+        
     }
     useEffect(()=>{
         myApi();

@@ -52,9 +52,10 @@
 }
 .cardHolder {
   display: flex;
+  column-gap: 45px;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap:45px;
+  row-gap:40px;
 }
 .ratingContainer,.ratingDetailes {
   display: flex;
@@ -99,7 +100,8 @@ a {
   padding: 20px;
   line-height: 20px;
   min-height: 150px;
-  width: 70%;
+  width: 62%;
+  /* gap:10px */
 }
 .menuCardHolder {
   display: flex;
@@ -108,12 +110,22 @@ a {
   row-gap:30px;
 }
 .menuImg {
-  height: 200px;
-  width: 230px;
+  /* height: 200px; */
+  /* width: 230px; */
   border-radius: 35px;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardImage {
+  border-radius: 10px;
+   height: 150px;
+  width: 190px; 
 }
 .menuDetailes {
   line-height: 30px;
+  width: 70%;
 }
 .dataDescription {
   word-break: break-word;
@@ -122,4 +134,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.3px;
+}
+p {
+  word-break: break-all;
 }
